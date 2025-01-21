@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="autor" content="Felipe Dias" />
+		<meta name="keywords" content="Conexão, conexao, lago, lago paranoá, aula no lago, aula no lago paranoá, ar livre, parque, conexão+natureza, conexao, atidades fisicas" />
+		<meta name="description" content="Aulas de atividades físicas ao ar livre realizadas no Lago Paranoá" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Conexão+Natureza</title>
+	</head>
+	<body>
+		<header>
+			<img src="img/banner.png" alt="banner contendo o logo da conexão+natureza acompanhado de uma paisagem no parque"/>
+		</header>
+		<nav>
+				<a class="a-menu" href="index.html">HOME</a>
+				<a class="a-menu" href="index.html#pag-beneficios"> BENEFÍCIOS</a>
+				<a class="a-menu" href="index.html#pag-modalidades"> MODALIDADES</a>
+				<a class="a-menu" href="index.html#pag-treinos"> TREINOS</a>
+				<a class="a-menu" href="#"> AGENDAMENTOS</a>
+		</nav>
+	
+		<section id="pag-agendamentos">
+			<h1>Agendamentos</h1>
+		<p>Agende uma aula experimental. Grátis!</p>
+
+		<form name="" method="" action="">
+			<label for="nome">Nome</label>
+			<input id="nome" type="text" name="nome_completo" placeholder="Digite seu nome completo" required />
+
+			<label for="email">E-mail</label>
+			<input id="email" type="email" name="email" placeholder="nomeusuario@gmail.com" />
+
+
+			<label for="senha">Senha</label>
+			<input id="senha" type="password" name="senha" placeholder="somente números" />
+
+			<label for="celular">Celular</label>
+			<input id="celular" type="tel" name="celular" placeholder="(99)99999-9999" pattern="“^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$”" />
+
+			<div id="data-hora-min">
+				<div>
+					<label for="data">Data</label>
+					<input id="data" type="date" name="data" />
+				</div>
+				<div>
+					<label for="hora">Hora</label>
+					<input id="hora" type="time" name="hora" />
+				</div>
+				<div>
+					<label for="aulas">Aulas</label>
+					<input id="aulas" type="number" name="aulas" min="1" max="10" step="1"/>
+				</div>
+			</div>
+
+			<label for="nível">Nível</label>
+			<select id="nível" name="nível">
+				<option value= >Selecione</option>
+				<option value="infantil">infantil</option>
+				<option value="jovens/adolescentes">jovens/adolescentes</option>
+				<option value="adultos">adultos</option>
+				<option value="idosos">idosos</option>
+			</select>
+
+			<fieldset>
+				<legend>Gênero</legend>
+			<input id= "masc" type="radio" name="genero" value="masc" /> <label for="masc">Masculino</label></br>
+			<input id="fem" type="radio" name="genero" value="fem" /> <label for="fem">Feminino</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Atividades</legend>
+				<input id="cor" type="checkbox" name="atividade" value="corrida" /> <label for="cor">Corrida</label></br>
+				<input id= "fut" type="checkbox" name="atividade" value="futebol" /> <label for="fut">Futebol</label></br>
+				<input id="cab" type="checkbox" name="atividade" value="cabo de guerra" /> <label for="cab">Cabo de guerra</label></br>
+				<input id="zum" type="checkbox" name="atividade" value="zumba" /> <label for="zum">Zumba</label>
+			</fieldset>
+
+			<label for="msg">Mensagem</label>
+			<textarea id="msg" cols="52" rows="4">
+			</textarea>
+
+			<div id="botoes-form">
+				<input type="submit" name="btn-agendar" value="agendar">
+				<input type="reset" name="btn-cancelar" value="cancelar">
+			</div>
+		</form>
+	</section>
+	<footer>
+		<p>Desenvolvido por <a href="http://instagram.com/ifelipe_dias" target="_blank">Felipe Dias</a> - 2024</p>
+ 	</footer>
+	</body>
+</html>
